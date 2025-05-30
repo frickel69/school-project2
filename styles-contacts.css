@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1c1c1c;
+  color: #f4f1ea;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #e6b400;
+  margin-bottom: 40px;
+}
+
+.contact-info h2 {
+  font-size: 1.6rem;
+  color: #e6b400;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-info p,
+.contact-info ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: #f4f1ea;
+  text-decoration: underline;
+}
+
+.contact-info ul.hours {
+  list-style: none;
+  padding: 0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  color: #aaa;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.header-container {
+  background-color: #1c1c1c;
+  padding: 20px 0;
+}
+
+.header-inner {
+  padding-top: 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  justify-content: center;
+}
+
+.navbar ul li a {
+  color: #f4f1ea;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #e6b400;
+  border-bottom: 2px solid #e6b400;
+}
+
+.language {
+  padding-right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+#socials {
+  display: flex;
+  gap: 20PX;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-info p,
+  .contact-info ul {
+    font-size: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul li a {
+    font-size: 1.3rem;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .language {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 20px 10px;
+  }
+
+  #socials img {
+    width: 70px;
+    height: auto;
+  }
+}
